@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.crud.EditarClienteController">
+   <top>
+      <Pane prefHeight="400.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="82.0" layoutY="41.0" text="Nome Completo" />
+            <TextField fx:id="textFieldNome" layoutX="190.0" layoutY="37.0" promptText="ex: João Pedro Freire" />
+            <Label layoutX="137.0" layoutY="76.0" text="Celular" />
+            <TextField fx:id="textFieldCelular" layoutX="190.0" layoutY="72.0" onKeyReleased="#tfCelularKeyReleased" promptText="ex:21956472112" />
+            <TextField fx:id="textFieldEmail" layoutX="506.0" layoutY="36.0" promptText="ex:faminto@SAC.com" />
+            <TextField fx:id="textFieldCPF" layoutX="506.0" layoutY="71.0" onKeyReleased="#tfCpfKeyReleased" promptText="ex: 12345678900" />
+            <Label layoutX="462.0" layoutY="41.0" text="Email" />
+            <Label layoutX="474.0" layoutY="76.0" text="CPF" />
+            <Separator layoutX="55.0" layoutY="119.0" prefHeight="15.0" prefWidth="693.0" />
+            <Label layoutX="159.0" layoutY="153.0" text="Rua" />
+            <TextField fx:id="textFieldRua" layoutX="192.0" layoutY="149.0" prefHeight="27.0" prefWidth="340.0" promptText="ex: Avenida José Morais de Almeida" />
+            <TextField fx:id="textFieldNumero" layoutX="605.0" layoutY="149.0" onKeyReleased="#tfNumeroEnderecoKeyReleased" prefHeight="27.0" prefWidth="70.0" promptText="ex: 2787" />
+            <Label layoutX="544.0" layoutY="154.0" text="Número" />
+            <Label layoutX="157.0" layoutY="189.0" text="CEP" />
+            <TextField fx:id="textFieldCEP" layoutX="192.0" layoutY="184.0" onKeyReleased="#tfCepKeyReleased" promptText="ex:60456241" />
+            <TextField fx:id="textFieldBairro" layoutX="508.0" layoutY="184.0" promptText="ex: Aldeota" />
+            <Label layoutX="461.0" layoutY="189.0" text="Bairro" />
+            <Label layoutX="96.0" layoutY="224.0" text="Complemento" />
+            <TextField fx:id="textFieldComplemento" layoutX="192.0" layoutY="219.0" prefHeight="27.0" prefWidth="482.0" promptText="ex: Apartamento 1202 A, perto da americanas da Antonio Sales" />
+            <Separator layoutX="55.0" layoutY="248.0" prefHeight="15.0" prefWidth="693.0" />
+            <Label layoutX="68.0" layoutY="283.0" text="Número do Cartão" />
+            <TextField fx:id="textFieldNumeroCartao" layoutX="192.0" layoutY="278.0" onKeyReleased="#tfNumeroCartaoKeyReleased" prefHeight="27.0" prefWidth="184.0" promptText="ex: 1234567890123456" />
+            <Label layoutX="413.0" layoutY="283.0" text="Código de Segurança" />
+            <TextField fx:id="textFieldCodigoSeguranca" layoutX="557.0" layoutY="278.0" onKeyReleased="#tfCodigoSegurancaKeyReleased" prefHeight="27.0" prefWidth="67.0" promptText="ex: 539" />
+            <Label layoutX="77.0" layoutY="318.0" text="Titular do Cartão" />
+            <TextField fx:id="textFieldTitular" layoutX="192.0" layoutY="313.0" promptText="ex: João Pedro Freire" />
+            <Label layoutX="409.0" layoutY="318.0" text="Vencimento do Cartão" />
+            <TextField fx:id="textFieldVencimento" layoutX="557.0" layoutY="313.0" onKeyReleased="#tfValidadeCartaoKeyReleased" prefHeight="27.0" prefWidth="67.0" promptText="ex:07/21" />
+            <Button fx:id="btnSalvar" layoutX="348.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnSalvarClick" text="Salvar" />
+         </children></Pane>
+   </top>
+</BorderPane>
